@@ -1,0 +1,35 @@
+/* HOME-4 */
+.home_5 .witr_slider_btns {
+    margin-top: 55px;
+}
+.home_5 .witr_btn {
+    padding: 20px 40px;
+}
+
+/* service area */
+.home_5 .witr_single_service_content {
+   padding: 0;
+}
+
+/* blog area */
+.witr_middle {
+    margin-top: 30px;
+}
+/* service area  */
+.home_5 .witr_single_service {
+    text-align: left;
+    padding: 40px 30px 25px;
+} 
+.home_5 .witr_single_service_content i {
+    float: left;
+    margin: -30px 20px 0px 0px;
+}
+.home_5 .witr_single_service_content p{
+	margin-top: 50px;
+	transition:.5s;
+} 
+
+
+
+
+

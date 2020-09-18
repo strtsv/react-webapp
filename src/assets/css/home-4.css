@@ -1,0 +1,87 @@
+/* HOME-4 */
+    
+.home_4 .witr_slider_imge::before {
+    background: rgba(5, 62, 86, 0.6);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}	
+.home_4 .witr_slider_btns {
+    margin-top: 14%;
+}
+.home_4 .witr_slider_btns a::before {
+    position: absolute;
+    content: '';	
+    width: 2px;
+    height: 85px;
+    left: 65px;
+    top: -125px;
+    background: #00a2ff;
+
+    animation-fill-mode: both;
+    animation: blinker 1.5s ease-in-out infinite;
+}
+
+@keyframes blinker {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+.witr_feature_area4{
+	padding: 95px 0 62px;
+}
+.home_4 .witr_single_feature {
+	box-shadow: 0px 6px 30px 0px rgba(148,146,245,0.2);
+}
+
+/* service area */
+.home_4 .witr_single_service{
+	padding: 20px 30px;	
+}
+.home_4 .witr_single_service:hover{
+    background-image: url(../images/about/bg1.png);
+    background-position: -239px -249px;
+    box-shadow: 0px 6px 30px 0px rgba(148,146,245,0.2);
+    background-repeat: no-repeat;
+	border:1px solid #fff;
+}
+
+/* witr_portfoli_area */
+.home_4.witr_portfoli_area {
+    padding-bottom: 85px;
+    border-top: 1px solid #ddd;
+    padding-top: 95px;
+}
+.witr_portfoli_area.home_4 .portfolio_filter ul li,
+.witr_portfoli_area.home_4 .witr_port_p p,
+.witr_portfoli_area.home_4 .witr_sec_title_inner h2{
+    color: #333;
+}
+.witr_portfoli_area.home_4 .witr_sec_title_inner h6{
+	color:#00a2ff;
+}
+.home_4 .portfolio_filter ul li.active,
+.home_4 .portfolio_filter ul li:hover {
+    color: #00a2ff;
+}    
+
+
+
+
+
+
+
+
+

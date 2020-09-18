@@ -1,0 +1,221 @@
+/* ====== home 6 ======= */
+.witr_slider_imge::before {
+    background: rgba(0, 0, 0, 0.25);
+}
+.witr_slider_content h1 {
+    font-size: 120px;
+    margin-bottom: 60px;
+}
+.witr_bbtn {
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;	
+    padding: 15px 40px;
+	text-transform: uppercase;
+    border: 2px solid #fff;
+}
+.witr_bbtn:hover{
+    border: 2px solid #ff6000;
+	background:#ff6000;
+}
+
+/* section area css */
+.witr_sec_title_inner h6 {
+    color: #ff6000;
+    text-transform: uppercase;
+}
+
+/* web area css */
+.witr_web_area {
+    border: none;
+    padding: 82px 0 70px;
+    background-image: url(../images/case/bg.jpg);
+    background-position: center;
+}
+.witr_web_content h1,
+.witr_web_content p{
+    color: #fff;
+}
+.witr_web_content a {
+    color: #ff6000;
+    border: 1px solid #ff6000;
+}
+.witr_web_content a:hover {
+    border-color: #ff6000;
+    background: #ff6000;
+}
+
+/* feature area css */
+.witr_feature_area6 {
+    padding: 95px 0 72px;
+}
+.witr_single_feature{
+	position:relative;
+}
+.witr_single_feature_content {
+    padding: 33px 30px 20px;
+}
+.witr_single_feature_content i {
+	position:absolute;
+    color: #fff;
+    float: none;
+    margin: 0;
+    background: #233359;
+    bottom: 83px;
+}
+.witr_single_feature:hover .witr_single_feature_content i {
+	background:#ff6000;
+}
+
+.witr_single_feature_content span{
+    color: #ff6000;
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    left: 140px;
+    top: -25px;
+}
+.witr_single_feature_content span::before{
+    position: absolute;
+    content: "";
+    background: #ff6000;
+    width: 40px;
+    height: 1px;
+    left: -50px;
+    top: 12px;	
+}
+.witr_single_feature_content span,
+.witr_single_feature_content span::before{
+	opacity:0;
+}
+.witr_single_feature:hover .witr_single_feature_content span,
+.witr_single_feature:hover .witr_single_feature_content span::before{
+	opacity:1;
+}
+
+/* about area css */
+.witr_about_area{
+    padding: 100px 0 100px;
+    background-image: url(../images/about/bg3.jpg);
+	background-position: center;
+	background-repeat: no-repeat;	
+}
+.witr_about_area.home_6 .witr_sec_title_inner {
+    background: #fff;
+    padding: 58px 51px;
+}
+.witr_about_area .witr_sec_title_inner h2 {
+    margin: 11px 0 21px;
+}
+.witr_sec_title_inner p{
+	color:#828282;
+	margin-bottom:30px;
+}
+.witr_about_area .witr_bbtn {
+    color: #333;
+    border: 2px solid #ff6000;
+}
+.witr_about_area .witr_bbtn:hover {
+    color: #fff;
+}
+
+.witr_images_area{
+	padding-top:60px;
+}
+
+/* witr_service_area */
+.witr_service_area {
+    padding: 95px 0 70px;
+}
+.witr_single_service:hover{
+    background: #ff6000;
+}
+.witr_single_service_content i{
+    background: #ff6000;
+    color: #fff;
+}
+.witr_single_service:hover .witr_single_service_content i{
+    background: #fff;
+    color: #ff6000;
+}
+.witr_single_service:hover .witr_single_service_content h3 a,
+.witr_single_service:hover .witr_single_service_content p{
+    color: #fff;
+}
+
+/* portfolio area css */
+.witr_portfoli_area {
+    padding-bottom: 30px;
+}
+.home_6 .bg6{
+    padding: 100px 0 300px;
+    background-image: url(../images/case/bg.jpg);
+    background-position: center;	
+}
+.home_6 .portfolio {
+    margin-top: -280px;
+}
+
+.witr_test_content p,
+.witr_single_service_content p,
+.witr_s_counter_content p{
+	color:#828282;
+}
+.witr_footer_menu ul li a:hover,
+.witr_footer_item ul li a:hover,
+.witr_web_number span,
+.witr_blog_content h4 a:hover,
+.witr_test_name span i,
+.witr_ns_part span,
+.witr_s_counter_number h1,
+.witr_s_counter_number span,
+.single_portfolio_content p,
+.single_portfolio_content h3,
+.portfolio_filter ul li.active,
+.portfolio_filter ul li:hover{
+    color: #ff6000;
+}
+.witr_web_number span::before,
+#scrollUp,
+.witr_blog_content h4 a::before,
+.witr_single_blog_date,
+.owl-dot.active,
+.portfolio_social a i,
+.portfolio_filter ul li:before{
+	background:#ff6000;
+}
+.single_portfolio_thumb:before,
+.witr_single_blog_thumb::before{
+	background:rgba(255, 96, 0, 0.6);
+}
+.portfolio_filter ul li:after {
+    border-color: transparent transparent #ff6000;
+}
+.portfolio_social a i:hover {
+    background: #001f31;
+}
+
+/* witr_counter_area */
+.witr_counter_area {
+    padding-top: 65px;
+}
+.witr_testi_main,
+.witr_background_test{
+	border-color:#ff6000;	
+}
+
+.witr_brand_area {
+	margin: 0px 0 7px;
+    background-image: url(../images/brand/bg3.jpg);
+}
+
+
+
+
+
+
+
+
+
+
