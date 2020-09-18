@@ -1,0 +1,321 @@
+
+/*===========================
+    1.Top manu css 
+===========================*/
+
+.witr_header_top {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+	border-bottom:1px solid rgba(255, 255, 255, 0.2);
+	padding: 15px 0;
+	margin-bottom:25px;
+}
+
+/* left css */
+.witr_top_address p {
+    margin-bottom: 0;
+}
+.witr_top_address p span,
+.witr_top_address p a {
+    margin-right: 20px;
+}
+.witr_top_address p span i,
+.witr_top_address p a i {
+    font-size: 13px;
+    margin-right: 10px;
+}
+.witr_top_address p a {
+	color: #fff;
+	transition:.5s;
+}
+.witr_top_address p a:hover{
+	color: #00a2ff;
+}
+
+/* right css */
+.witr_top_right_menu{}
+.witr_select{
+    display: inline-block;	
+}
+.witr_select select{
+     color: #fff;	
+}
+.witr_select select option,
+.witr_select2 select option{
+	color: #333;
+	
+}
+.witr_select2{
+	display: inline-block;
+}
+.witr_select2 select{
+  color: #fff;  	
+}
+.witr_select2 select option{
+}
+
+/*===========================
+    2.Main manu css 
+===========================*/
+.witr_header_area {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding-top: 22px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(52, 58, 64, 0.7);
+    z-index: 999;
+    height: 80px;
+	animation: navigation .50s;
+    padding-top: 2px;
+
+}
+.sticky .witr_header_logo a img {
+	width: 67%;
+}
+.sticky .witr_header_logo {
+    margin-top: 24px;
+}
+.sticky .witr_main_menu ul li a {
+	padding: 25px 0;
+}
+ 
+.witr_header_logo {
+    margin-top: 38px;
+}
+.witr_header_logo img {
+    width: 100%;
+}
+.witr_main_menu {
+    float: right;
+}
+.witr_main_menu  ul {
+display: inline-block;	
+}
+
+.witr_main_menu  ul  li {
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+}
+
+.witr_main_menu  ul  li:first-child {
+    margin-left: 0;
+}
+.witr_main_menu  ul  li  a{	
+    color: #fff;
+    font-size: 17px;
+    padding: 48px 0;
+}
+.witr_has_children > a::after{
+    content: "\f107";
+    font-family: FontAwesome;
+    opacity: 1;
+    font-size: 14px;
+    opacity: .5;
+    margin-left: 5px;
+}
+.witr_main_menu ul li .witr_sub_menu {
+	display: block;
+	position: absolute;
+	top: 110%;
+	left: -4px;
+	z-index: 99;
+	width: 200px;
+	background-color: #fff;
+	margin-top: -1px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s linear;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.witr_main_menu ul li:hover .witr_sub_menu {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+
+}
+.witr_main_menu ul li .witr_sub_menu li {
+	text-align: left;
+	margin-left: 0;
+	display: block;
+	-webkit-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	margin-left: 0 !important;
+}
+
+.witr_main_menu ul li .witr_sub_menu li:hover {
+    background: #19b4f2;
+}
+.witr_main_menu ul li .witr_sub_menu li > a {
+    display: block;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #19b4f2;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    display: block;
+    border-bottom: 1px solid rgba(25, 180, 242, 0.7);
+    white-space: nowrap;
+    margin-left: 0;
+}
+.witr_main_menu ul li .witr_sub_menu li:last-child a {
+    border-bottom: 0;
+    border: 0;
+}
+.witr_main_menu ul li .witr_sub_menu li:hover > a {
+    padding-left: 25px;
+    color: #fff;
+
+}
+
+
+/* top quearys */
+
+.em-top-quearys-area {
+}
+.em-header-quearys {
+    list-style: none;
+    text-align: center;
+    margin-top: 30px;
+}
+.witr_main_menu .em-header-quearys {
+    display: inherit;
+}
+.em-quearys-menu i {
+    background: #12a9ff;	
+    border-radius: 50px;
+    display: inline-block;
+    height: 26px;
+    text-align: center;
+    width: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #fff;
+}
+.em-quearys-inner {} 
+.em-quearys-form {
+    width: 100%;
+    max-width: 895px;
+    margin: auto;
+    padding: 30px 0;
+}
+.top-form-control {
+    position: relative;
+}
+.top-form-control input {
+    background: transparent;
+    color: #fff;
+    font-size: 50px;
+	font-weight:500;
+    height: 100px;
+    padding: 0 40px 0 15px;
+    width: 100%;
+    border: none;
+    -webkit-transition: 1s;
+    transition: .5s;
+    border-bottom: 3px solid #fff;
+}
+.top-form-control input::placeholder{
+    color: #fff;
+	font-size: 50px;
+}
+.top-form-control button.top-quearys-style {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    /* height: 44px; */
+    background: transparent;
+    font-size: 45px;
+    border: none;
+    color: #fff;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.em-s-hidden {
+    display: none !important;
+}
+.em-quearys-inner {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 10000;
+    transition: all 0s 0s cubic-bezier(0.32, 0, 0, 1), transform .3s .15s cubic-bezier(0.32, 0, 0, 1), background .3s 0s cubic-bezier(0.32, 0, 0, 1);
+    transform: scale(1.1);	
+    visibility: hidden;
+    opacity: 0;
+    left: -150%;
+    background: rgba(0, 0, 0, 0);	
+}
+.em-quearys-inner{}
+.em-s-open{
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    background: rgba(18, 169, 255, 0.94);
+    transform: scale(1);	
+	
+}
+nav.maxu_menu.main-search-menu {
+    float: right;
+    margin-right: 100px;
+}
+.maxu_menu.main-search-menu > ul,
+.em-quearys-top.msin-menu-search {
+    display: inline-block;
+}
+.em-quearys-top.msin-menu-search .em-quearys-menu i {
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    margin-left: 20px;
+    margin-right: 15px;
+	cursor: pointer;
+}
+.maxu_menu ul.em-header-quearys {
+	text-align: center;
+	margin-top: 30px;
+	margin-right: 15px;
+}
+
+/* batton css */
+.header_btn {
+    display: inline-block;
+}
+
+.btns{}
+.btns a{
+    padding: 15px 25px;
+    background: #12a9ff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+	transition:.5s;	
+}
+.btns a:hover{
+	background:#9db6ff;
+}
+.header_btn a{
+    padding: 9px 30px;
+    display: block;	
+}
