@@ -1,0 +1,1812 @@
+/*
+  Template Name: fward 
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+
+1.slick-prev css
+2.slider css
+3.section title css 
+4.about area css
+5.feature area css
+6.service area css
+7.call to action area
+8.portfolio arae css
+9.web area css
+10.brand area css
+11.counter area css
+12.testomonial area css
+13.contact area css
+14.blog area css
+15.footer area css
+16.footer bottom area css
+17.team area css
+18.single blog css
+19.contact area css
+
+*/
+
+
+body {
+	 overflow-x: hidden;
+}
+
+/*===========================
+    1.slick-prev
+	 slick-next css 
+===========================*/
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev,
+.slick-next {
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    top: 50%;
+    -webkit-transform: translate(0px, -50%);
+    transform: translate(0px, -50%);
+    width: 50px;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 50px;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: #999;
+    font-size: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    content: "\f104";
+    font-family: FontAwesome;
+}
+ .slick-next:before { 
+    content: "\f105"; 
+    font-family: FontAwesome; 
+ }
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    background-color: #00a2ff;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+    color: #fff;
+}
+.witr_slider_area .slick-next{
+	right:0;
+}
+
+/* carousel nav */
+.curosel-style .owl-nav div {
+    border:2px solid #00a2ff;
+    border-radius: 50%;
+    color: #00a2ff;
+    font-size: 19px;
+    height: 44px;
+    left: -45px;
+    line-height: 42px;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 44px;
+    text-align: center;
+    z-index: 99;
+    -webkit-transform: translateY(-49%);
+            transform: translateY(-49%);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.curosel-style .owl-nav .owl-next {
+    left: auto;
+    right: -45px;
+}
+.curosel-style .owl-nav .owl-next:hover {
+    background: #00a2ff;
+    color: #fff;
+}
+.curosel-style .owl-nav .owl-prev:hover {
+    background: #00a2ff;
+    color: #fff
+}
+.owl-carousel .owl-item img {
+    margin: auto;
+}
+.curosel-style:hover .owl-nav div {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+ /* carousel dots */
+.owl-dots {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.owl-dot {
+    background: #ddd;
+    border-radius: 50px;
+    display: inline-block;
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 20px;
+}
+.owl-dot.active {
+    background: #00a2ff;
+}
+/*===========================
+    2.slider css 
+===========================*/
+
+.witr_slider_area {}
+.witr_slider_imge{
+	position:relative;
+}
+.witr_slider_imge img{}
+.witr_slider_imge:before{
+     background: rgba(5, 62, 86, 0.73);
+	 position: absolute;
+     content: "";
+     width: 100%;
+     height: 100%;
+     left: 0px;
+     right: 0px;
+     bottom: 0px;	
+}
+.witr_slider_content {
+    position: absolute;
+    top: 55%;
+	left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+	z-index:999;
+}
+.witr_slider_content h1 {
+	color: #fff;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.witr_slider_content h5 {
+	color: #fff;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* s_btn_css */
+.witr_slider_btn{
+	margin-top: 50px;
+}
+a.witr_s_btn span {
+	color: #fff;
+	border-bottom:1px solid #fff;
+	font-size: 18px;
+    font-weight: 700;
+}
+.right a.witr_s_btn span {
+    margin-right: 24px; 
+
+}
+
+
+a.witr_s_btn {position: relative;}
+a.witr_s_btn i {
+    color: #fff;
+    background: #00a2ff;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 10px;
+    font-size: 25px;
+	-webkit-transition: .5s;
+	transition:.5s;
+}
+a.witr_s_btn i:hover{
+    background: #001f31;
+}
+
+a.witr_s_btn:after {
+    width: 82px;
+    height: 82px;
+    left: 7px;
+    top: -3px;
+    border: 1px solid #ebeff1;
+    position: absolute;
+    content: '';
+/*     z-index: -1; */
+    border-radius: 50%;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: blinker 1.5s ease-in-out infinite;
+            animation: blinker 1.5s ease-in-out infinite;
+}
+a.witr_s_btn:before {
+	width: 100px;
+    height: 100px;
+    left: -2px;
+    top: -12px;
+    border: 1px solid #ebeff1;
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: blinker 1.5s ease-in-out infinite;
+            animation: blinker 1.5s ease-in-out infinite;
+}
+.witr_slider_area .slick-prev{
+    left: 15px;
+}
+.witr_slider_area .slick-next{
+    right: 15px;
+}
+.mt-40 a.witr_s_btn:after {
+    left: 187px;
+}
+.mt-40 a.witr_s_btn:before {
+    left: 178px;
+}
+.right a.witr_s_btn:after {
+    left: 196px;
+}
+.right a.witr_s_btn:before {
+    left: 187px;
+}
+
+
+@-webkit-keyframes blinker {
+    0% {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+    }
+}
+
+
+@keyframes blinker {
+    0% {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+    }
+}
+/*===========================
+    3.section title css 
+===========================*/
+.witr_section_area{}
+/* left css */
+.witr_section_title {
+    margin-bottom: 40px;
+}
+
+.witr_sec_title_inner h6 {
+    font-size: 17px;
+    color: #00a2ff;
+    margin-bottom: -6px;
+}
+.witr_sec_title_inner img {
+}
+.witr_sec_title_inner h2 {
+    font-size:40px;
+    line-height: 50px;
+}
+/* right css */
+.witr_saction_right{}
+.witr_saction_icon{}
+.witr_saction_icon a.witr_s_btn span {
+    color: #333;
+    border-bottom: 1px solid #333;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+/*===========================
+    4.about area css 
+===========================*/
+.witr_about_area{
+    padding: 95px 0px 70px;
+}
+.witr_single_about {
+    padding: 34px 30px;
+    margin-bottom: 30px;	
+}
+.witr_single_about:hover{
+    background: #FFF;
+    box-shadow: 0px 6px 40px 0px rgba(148, 146, 245, 0.2);	  
+    background-image: url(assets/images/about/bg1.png);
+    background-position: -225px -250px;
+    background-repeat: no-repeat;	
+} 
+.active .witr_single_about{
+    background: #FFF;
+    box-shadow: 0px 6px 40px 0px rgba(148, 146, 245, 0.2);	  
+    background-image: url(assets/images/about/bg1.png);
+    background-position: -225px -250px;
+    background-repeat: no-repeat;
+	
+} 
+
+.witr_about_thumb{}
+.witr_about_thumb img {
+	float: left;
+    display: inline-block;
+}
+.witr_about_contant{
+	margin-left: 84px;
+}
+.witr_about_contant h2 {
+	font-size: 22px;
+}
+.witr_about_contant p {}
+
+/* right css */
+.witr_single_a_blog{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.witr_single_a_blog_thumb{
+	position:relative;
+}
+.witr_single_a_blog_thumb img{
+	width: 100%;
+}
+.witr_single_a_blog_date {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: #00a2ff;
+    padding: 5px 25px 15px;
+}
+.witr_single_a_blog_date span{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;	
+}
+.witr_single_a_blog_date h3{
+    font-size: 22px;
+    color: #fff;
+    margin-top: -5px;	
+}
+
+
+/*===========================
+    5.feature area css 
+===========================*/
+.witr_feature_area{
+    padding: 90px 0 140px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-image: url(assets/images/feature/bg.jpg);	
+}
+.witr_feature_area .witr_sec_title_inner h2 {
+    color:#fff;
+}
+.witr_feature_area .witr_saction_icon a.witr_s_btn span {
+    color:#fff;
+	border-color:#fff;
+	margin-right: 15px;	
+}
+.witr_feature_area .witr_section_title {
+    float: right;
+}
+.witr_single_feature {
+    margin-bottom: 30px;
+}
+.witr_single_feature_image {}
+.witr_single_feature_image img {
+	width:100%;
+}
+.witr_single_feature_content {
+	background: #fff;
+    padding: 20px 18px 20px;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+.witr_single_feature_content i {
+    font-size: 40px;
+    color: #00a2ff;
+    float: left;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin: 0 30px;
+}
+.witr_single_feature:hover .witr_single_feature_content i {
+	background: #00a2ff;
+	color: #fff;	
+}
+.witr_single_feature_content h3 a{
+    font-size: 22px;
+    color: #333;
+    margin: 12px 0 10px;
+    display: block;
+    font-weight: 700;
+	-webkit-transition: .5s;
+	transition:.5s;
+}
+.witr_single_feature_content h3 a:hover{
+    color: #00a2ff;
+}
+
+
+/*===========================
+    6.service area css 
+===========================*/
+.witr_service_area{
+    padding: 25px 0 70px;
+}
+.witr_single_service {
+	text-align:center;
+	border:1px solid #ddd;
+    margin-bottom: 30px;
+	-webkit-transition: .5s;
+	transition:.5s;		
+}
+.active .witr_single_service {	  
+    background-image: url(assets/images/about/bg1.png);
+    background-position: 145px 110px;
+    border: 1px solid #fff;
+    box-shadow: 0px 6px 30px 0px rgba(148,146,245,0.2);	
+}
+.witr_single_service_content {
+    padding: 30px 38px 30px;
+}
+.witr_single_service_content i {
+    font-size: 45px;
+	background: #00a2ff;
+	color: #fff;
+    width: 118px;
+    height: 118px;
+    line-height: 118px;
+    text-align: center;
+    border-radius: 50%;
+	-webkit-transition: .5s;
+	transition:.5s;
+}
+.witr_single_service:hover .witr_single_service_content i {
+	background: #001f31;	
+}
+.witr_single_service_content h3{
+    font-size: 22px;
+    color: #333;
+    margin-top: 10px;
+	-webkit-transition: .5s;
+	transition:.5s;	
+}
+.witr_single_service_content h3 a{
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+	-webkit-transition: .5s;
+	transition:.5s;
+	font-weight: 700;
+    display: block;	
+}
+.witr_single_service_content h3 a:hover{
+    color: #00a2ff;	
+}
+
+/* witr_service_tab */
+.witr_service_tab{
+    border: 1px solid #ddd;
+    padding: 30px 35px 30px;
+    margin-bottom: 30px;
+	-webkit-transition: .8s;
+	transition:.8s;	
+}
+.witr_service_tab:hover{
+    box-shadow: 0px 6px 30px 0px rgba(148,146,245,0.2);
+	border: 1px solid #fff;	
+}
+ul.nav.witr_tabs_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.witr_service_tab i {
+    margin: 25px 30px 0 0px;
+    font-size: 45px;
+    float: left;
+    color: #00a2ff;
+	-webkit-transition: .5s;
+	transition:.5s;
+}
+.witr_service_tab:hover i{
+    color: #333;
+}
+.witr_service_tab h3 a{
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+	font-weight:700;
+	-webkit-transition: .5s;
+	transition:.5s;
+}
+.witr_service_tab:hover h3 a{
+    color: #00a2ff;
+}
+
+.witr_service_tab p {
+    color: #333;
+    overflow: hidden;
+}
+
+/*===========================
+    7.call to action area 
+===========================*/
+
+ .call_to_action_area {
+    border-top: 1px solid #ddd;
+    padding: 90px 0 100px;	
+}
+.call_to_action_title_{}
+.call_to_action_title_content{}
+.call_to_action_title_content h2 {
+     font-size: 40px;
+     margin-bottom: 22px;
+}
+.call_to_action_title_content p{
+
+}
+/* BATTON */
+.call_to_action_batton {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+.call_to_action_batton a {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.call_to_action_batton a:hover{
+     background:#001f31;
+     color:#fff;
+}
+
+/*===========================
+    8.portfolio arae css 
+===========================*/
+ .witr_portfoli_area{
+     padding-bottom: 85px;
+}
+.bg{
+    background-image: url(assets/images/portfolio/bg.jpg);
+    background-position: center;
+    padding: 75px 0;
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+.witr_portfoli_area .witr_sec_title_inner h2,
+.witr_portfoli_area .witr_sec_title_inner h6 {
+    color: #fff;
+} 
+/* PORTFOLIO filter CSS */
+ .portfolio_filter {
+	margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+ .portfolio_filter ul{}
+ .portfolio_filter ul li{
+	display: inline-block;
+    font-size: 17px;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    -webkit-transition: .5s;
+    transition: .5s;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+}
+ .portfolio_filter ul li.active, .portfolio_filter ul li:hover{
+     color:#00a2ff;
+}
+ .portfolio_filter ul li:before{
+     background: #00a2ff;
+     content: "";
+     width: 50%;
+     height: 2px;
+     left: 0px;
+     right: 0px;
+     bottom: -1px;
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     position: absolute;
+     margin: auto;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .portfolio_filter ul li:after{
+     content: "";
+     position: absolute;
+     left: 50%;
+     bottom: 0px;
+     margin: auto;
+     border-width: 6px;
+     border-style: solid;
+     border-color: transparent transparent #00a2ff;
+     -webkit-transform: translateX(-50%);
+             transform: translateX(-50%);
+     opacity:0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .portfolio_filter ul li.active:before, .portfolio_filter ul li.active:after, .portfolio_filter ul li:hover:before, .portfolio_filter ul li:hover:after{
+     opacity:1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+/* SINGLE PORTFOLIO CSS */
+
+ .single_portfolio{
+    overflow: hidden;
+    margin-top: 30px;
+	position: relative;
+}
+ .single_portfolio_thumb {
+     position: relative;
+     overflow: hidden;
+}
+ .single_portfolio_thumb img{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: .5s;
+    transition: .5s;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+ .single_portfolio_thumb:before{
+     content:"";
+     top:0;
+     right:0;
+     bottom:0;
+     left:0;
+     width:100%;
+     height:100%;
+     position:absolute;
+	background: rgba(0, 162, 255, 0.7);
+     opacity:0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     -webkit-transition: .5s;
+     transition:.5s;
+     z-index:1 
+}
+ .single_portfolio:hover .single_portfolio_thumb:before{
+     opacity:1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ .single_portfolio:hover .single_portfolio_thumb img, .single_portfolio:hover .portfolio_social a i{
+     opacity:1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform:scale(1.1);
+            transform:scale(1.1);
+}
+.single_portfolio_content{
+    position: absolute;
+    padding: 30px 50px;
+    bottom: 20px;
+    background: #fff;
+    left: -315px;
+    border-radius: 5px;
+    z-index: 1;
+	-webkit-transition: .5s;
+	transition:.5s;
+    text-align: center;
+}
+.single_portfolio:hover .single_portfolio_content{
+    left: 20px;
+}
+.single_portfolio_content h3 {
+     font-size: 22px;
+	 color:#00a2ff;
+	-webkit-transition: .5s;
+	transition:.5s;	 
+}
+.single_portfolio_content h3:hover {
+	 color:#001f31;
+}
+ .single_portfolio_content p{
+    padding-top: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #00a2ff;
+    font-weight: 500;
+}
+/* PORTFOLIO SOCIAL */
+ .portfolio_social {
+     text-align: center;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     margin: auto;
+     -webkit-transform: translateX(-50%) translateY(-50%);
+             transform: translateX(-50%) translateY(-50%);
+     z-index: 99;
+}
+ .portfolio_social a i {
+     background: #00a2ff;
+     border-radius: 50px;
+     height: 35px;
+     width: 35px;
+     line-height: 35px;
+     font-size: 16px;
+     color: #fff;
+     margin: 0 5px 0;
+    -webkit-transform:scale(0);
+            transform:scale(0);
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+.portfolio_social a i:hover {
+     background: #001f31;
+}
+
+/*===========================
+    9.web area css 
+===========================*/
+
+.witr_web_area {}
+.witr_web_brand {
+    margin-bottom: 30px;
+}
+.witr_web_number{
+	float: left;
+    margin-top: 20px;	
+}
+.witr_web_number span {
+    position: relative;
+	font-size: 25px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);	
+}
+.witr_web_number span:before {
+    position: absolute;
+    content: '';
+    background: #00a2ff;
+    height: 2px;
+    width: 40px;
+    left: -44px;
+    top: 17px;
+}
+.witr_web_content {
+    margin-left: 50px;
+}
+.witr_web_content h1{
+    font-size: 40px;
+    padding-top: 13px;
+    color: #333;
+    line-height: 40px;
+}
+.witr_web_content p {
+    margin: 25px 0 13px;
+}
+.witr_web_content a {
+    color: #00a2ff;
+    font-size: 17px;
+	border:1px solid #00a2ff;
+	padding:10px 30px;
+    margin-top: 15px;
+	-webkit-transition: .5s;
+	transition:.5s;	
+}
+.witr_web_content a:hover {
+    color: #fff;
+	border-color: #00a2ff;
+	background:#00a2ff;	
+}
+
+/*===========================
+    10.brand area css 
+===========================*/
+.witr_brand_area{
+    padding: 100px 0;
+    margin: 70px 0 95px;
+    background-image: url(assets/images/brand/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+.witr_single_brand{}
+.witr_single_brand_thumb{}
+.witr_single_brand_thumb img{}
+
+/*===========================
+    11.counter area css 
+===========================*/
+.witr_counter_area{}
+.witr_single_counter{
+    text-align: center;
+    box-shadow: 0px 6px 30px 0px rgba(148,146,245,0.2);
+    border: 1px solid #ececec;
+    padding: 35px 37px 45px;
+    margin-bottom: 30px;
+    background: #fff;	
+ }
+.witr_s_counter_number{}
+.witr_s_counter_number h1{
+     font-size: 40px;
+	 color:#00a2ff;
+     display: inline-block;
+}
+.witr_s_counter_number span {
+    font-size: 40px;
+    color: #00a2ff;
+    font-weight: 700;	 
+}
+.witr_s_counter_content{}
+.witr_s_counter_content h4{
+	font-size: 22px;
+    margin: 5px 0 10px;
+}
+ .witr_s_counter_content p{}
+
+/*===========================
+    12.testomonial area css 
+===========================*/
+
+.witr_testomonial_area {
+	padding: 20px 0 60px;
+	margin-left: 30px;
+}
+.witr_background_test{
+    background: #fff;
+    box-shadow: 0px 6px 30px 0px rgba(148,146,245,0.2);
+    border-top: 2px solid #00a2ff;
+    border-bottom: 2px solid #00a2ff;
+    width: 80%;
+    margin: auto;
+    height: 90%;
+	margin-top:100px;
+	margin-bottom:147px;
+}
+.witr_testi_main {
+    box-shadow: 0px 6px 30px 0px rgba(148,146,245,0.2);	
+    text-align: center;
+    padding: 50px 0px;
+    background: #fff;
+    border-top: 2px solid #00a2ff;
+    border-bottom: 2px solid #00a2ff;
+    width: 70%;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+.witr_test_part {
+    float: left;
+    margin-left: 215px;
+    margin-right: -165px;	
+}
+.witr_test_part img {}
+.witr_ns_part{}
+.witr_ns_part h1 {
+	font-size: 22px;
+    margin-top: 10px;	
+}
+.witr_ns_part span {
+    color: #00a2ff;
+    font-size: 17px;
+    font-weight: 500;
+}
+.witr_test_content{}
+.witr_test_content p {
+    width: 88%;
+    margin: auto;
+    margin-top: 30px;
+}
+.witr_test_name{}
+.witr_test_name h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: #4e3636;
+    margin: 30px 0 15px;
+	text-transform: capitalize;	
+}
+.witr_test_name span{}
+.witr_test_name span i{
+    color: #00a2ff;
+    font-size: 18px;	
+}
+.witr_testomonial_area .owl-dots {
+    bottom: 25px;
+}
+.owl-dot.active {
+	width: 50px;
+}
+/*===========================
+    13.contact area css 
+===========================*/
+.witr_contact_area{
+	padding: 100px 0 100px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(assets/images/brand/bg2.jpg);
+}
+.witr_contact_show {
+    background: #fff;
+    width: 30%;
+    margin: auto;
+    padding: 60px 40px;
+}
+.witr_contact_form{}
+.witr_contact_form_inner{}
+.witr_form_filed{
+     width:100%;
+}
+.witr_form_filed_inner{	 
+     float:left;
+     width:48.80%;
+     margin-bottom: 30px;
+}
+.witr_form_filed_inner:nth-child(odd){
+     margin-right:1.20%;
+}
+.witr_form_filed_inner:nth-child(even){
+     margin-left:1.20%;
+}
+.witr_form_filed_inner.ss_100{
+	width: 100%;	
+}
+.witr_form_filed_inner input{
+     text-transform: capitalize;
+	padding-left: 10px;
+	height: 45px;
+	width: 100%;
+	font-size: 17px;
+	font-weight: 400;
+	color: #00a2ff;
+	border: 1px solid #ddd;
+	text-align: center;
+	border-radius:5px;	
+}
+.witr_form_filed_inner input:focus{
+     border-color:#00a2ff;
+}
+.witr_contact_button{
+	text-align: center;	
+}
+.witr_contact_button button{
+    font-size: 17px;
+    padding: 15px 40px;
+    font-weight: 500;
+    color: #fff;
+    background: #00a2ff;
+    text-transform: uppercase;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border: none;
+    border-radius: 5px;
+}
+.witr_contact_button button:hover{
+    background: #001f31;	
+}
+
+/*===========================
+    14.blog area css 
+===========================*/
+
+.witr_blog_area {
+    padding: 90px 0px 65px;
+}
+.witr_single_blog{
+    overflow: hidden;
+    margin-bottom: 30px;	
+}
+.witr_single_blog_thumb{
+	position:relative;
+}
+.witr_single_blog_thumb img{
+	width:100%;
+}
+.witr_single_blog_thumb:before{
+    position: absolute;
+    content: '';
+    background: rgba(0, 162, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	-webkit-transition: .5s;
+	transition:.5s;
+    -webkit-transform: scale(0);
+            transform: scale(0);	
+}
+.witr_single_blog:hover .witr_single_blog_thumb:before{
+    -webkit-transform: scale(1);
+            transform: scale(1);	
+}
+
+.witr_single_blog_date {
+    position: absolute;
+    bottom: 15px;
+    left: -210px;
+    background: #00a2ff;
+    padding: 10px 15px;
+	-webkit-transition: .5s;
+	transition:.5s;
+}
+.witr_single_blog:hover .witr_single_blog_date {
+    left: 15px;
+}
+
+.witr_single_blog_date span{}
+.witr_single_blog_date span i{
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;	
+}
+.witr_single_blog_date h3{
+	font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;	
+}
+.witr_blog_content{
+    padding-top: 25px;
+}
+.witr_blog_content h4{}
+.witr_blog_content h4 a{
+	position: relative;
+    font-size: 22px;
+    color: #333;
+    font-weight: 700;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-bottom: 14px;
+}
+.witr_blog_content h4 a:before{
+    position: absolute;
+    content: '';
+    background: #00a2ff;
+    width: 70px;
+    height: 3px;
+    bottom: -16px;
+}
+.witr_blog_content h4 a:hover {
+    color: #00a2ff;
+}
+.witr_blog_content p {
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
+.witr_blog_content .witr_btn{
+    font-size: 17px;
+    padding: 15px 40px;
+    background: #00a2ff;
+	font-weight:400;
+	border-radius: 0px;
+	margin-top: 25px;	
+}
+.witr_blog_content .witr_btn:hover{
+    background: #001f31;	
+}
+
+/*=========================== 
+	paginations css
+===========================*/
+.paginations {
+    text-align: center;
+    margin-top: 20px;
+}
+.page-numbers li {
+    display: inline-block;
+}
+.paginations a, .page-numbers span.current {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    margin: auto 5px;
+    border: 1px solid #ddd;
+    color: #888;
+}
+.paginations a:hover, .paginations a.current, .page-numbers span.current {
+    background: #00a2ff;
+    border-color: #00a2ff;
+    color: #fff;
+}
+
+
+/*===========================
+    15.footer area css 
+===========================*/
+.witr_footer_area{
+	padding:100px 0;
+	background:#001f31;
+}
+.witr_footer_item{}
+.witr_footer_item h4 {
+    font-size: 22px;
+	color:#fff;
+    padding-bottom: 15px;
+}
+.witr_footer_item ul li a {
+    font-size: 17px;
+    line-height: 34px;
+    color: #fff;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.witr_footer_item ul li a:hover {
+    color: #00a2ff;
+}
+.witr_footer_item p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 32px;
+    margin-bottom: 14px;	
+}
+.witr_footer_item span {
+    color: #fff;
+    font-size: 17px;
+	line-height: 28px;	
+}
+.witr_footer_thumb {
+    margin-top: 10px;
+}
+.witr_footer_item img{
+    padding-bottom: 4px;
+    padding-right: 1px;	
+}
+/*===========================
+    16.footer bottom area css 
+===========================*/
+.witr_bottom_area{
+	background:#001b2b;
+	padding:10px 0;
+}
+.witr_copyright span {
+    font-size: 17px;
+    color: #fff;
+}
+/* right */
+.witr_footer_menu {} 
+.witr_footer_menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.witr_footer_menu ul li {
+    display: inline-block;
+}
+.witr_footer_menu ul li a {
+    color: #fff;
+    padding: 0 10px;
+    display: block;
+    font-size: 17px;
+	-webkit-transition: .5s;
+	transition:.5s;
+}
+.witr_footer_menu ul li a:hover {
+    color: #00a2ff;
+}
+.witr_footer_menu ul li:last-child a {
+    padding-right: 0px;
+}
+
+
+/*===========================
+   17.team area css 
+===========================*/
+.witr_team_area{
+	padding:90px 0 70px;
+	background:#f3faff;
+}
+.witr_single_team{
+	position: relative;
+    overflow: hidden;
+    padding-bottom: 50px;
+	margin-bottom:30px;
+}
+.witr_single_team_image {
+	position:relative;
+}
+.witr_single_team_image:before {
+    position: absolute;
+    content: '';
+    background:rgba(0, 162, 255, 0.61);
+    top: 0;
+	left: 100%;
+    right: 0;
+    bottom:0;
+    -webkit-transition: .5s;
+    transition:.5s;
+}
+.witr_single_team:hover .witr_single_team_image:before{
+    left: 0;	
+}
+.witr_single_team_image img {
+	width:100%;
+}
+/* team content css */
+.witr_single_team_waraper{
+    background: #fff;
+    bottom: -44px;
+    left: 0px;
+    padding: 21px 15px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    border-bottom: 1px solid #00a2ff;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin: 0 30px;
+}
+.witr_single_team:hover .witr_single_team_waraper{
+	bottom: 0px;	
+}
+.witr_single_team_content {}
+.witr_single_team_content h3 {
+	font-size: 20px;
+    color: #333;
+    margin-bottom:10px;
+    -webkit-transition: .5s;
+    transition: .5s;	
+}
+.witr_single_team_content span {
+	color:#828282;
+	font-size: 17px;
+    -webkit-transition: .5s;
+    transition: .5s;	
+}
+/* team social css */
+
+.witr_team_social{
+    margin-top: 18px;	
+}
+.witr_team_social a{
+	display: inline-block;
+	color:#828282;
+	font-size: 17px;
+	margin: 0 10px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.witr_team_social a:hover{
+	color:#00a2ff;
+}
+
+/*========================
+   scroll top css
+=========================*/
+
+#scrollUp {
+    background: #00a2ff;
+    bottom: 30px;
+    color: #fff;
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    right: 30px;
+    text-align: center;
+    width: 40px;
+}
+#scrollUp i {
+    color: #fff;
+}
+
+/* witr_banner_area */
+.witr_banner_area{
+    padding: 90px 0 150px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-image: url(assets/images/feature/bg3.jpg);	
+}
+.witr_single_banner{
+	margin-top: 155px;
+}
+.witr_single_banner h2{
+	font-size:40px;
+	color:#fff;
+}
+
+/* ====== other page ======= */
+.about.witr_web_area {
+    background: #f3faff;
+    padding: 80px 0 70px;
+}
+.witr_feature_area7 {
+    padding: 95px 0 70px;
+}
+.about .witr_single_feature{
+	position:relative;
+    box-shadow: 0px 6px 30px 0px rgba(148,146,245,0.2);	
+}
+.about .witr_single_feature_content {
+    padding: 33px 30px 20px;
+}
+.about .witr_single_feature_content i {
+	position:absolute;
+    color: #fff;
+    float: none;
+    margin: 0;
+    background: #233359;
+    bottom: 83px;
+}
+.witr_single_feature:hover .about .witr_single_feature_content i {
+	background:#00a2ff;
+}
+.witr_single_feature_content span{
+    color: #00a2ff;
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    left: 140px;
+    top: -25px;
+}
+.witr_single_feature_content span:before{
+    position: absolute;
+    content: "";
+    background: #00a2ff;
+    width: 40px;
+    height: 1px;
+    left: -50px;
+    top: 12px;	
+}
+.witr_single_feature_content span,
+.witr_single_feature_content span:before{
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.witr_single_feature:hover .witr_single_feature_content span,
+.witr_single_feature:hover .witr_single_feature_content span:before{
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.witr_section_bg{
+    background: #f3faff;	
+}
+.about.witr_counter_area {
+    padding-top: 95px;
+}
+.witr_service_area.ss {
+    padding: 100px 0 70px;
+}
+.witr_features_area.home_2 {
+    background: #f3faff;
+    padding: 90px 0 70px;
+}
+.witr_port_s_area{
+    padding: 70px 0 161px;	
+}
+.witr_port_s_area .owl-dots {
+    bottom: -75px;
+}
+
+/*====== 18.single blog css ======*/
+
+/* social */
+.blog-img{}
+.blog-img img{
+	width:100%;
+}
+.blog-title span {
+	font-size: 20px;
+	color: #828282;
+	padding-right: 9px;
+}
+.blog-title ul {
+	display: inline-block;
+}
+.blog-title ul li{
+    display: inline-block;
+}
+.blog-title ul li a{
+    height: 40px;
+    width: 40px;
+    background: #584BED;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 33px;
+    margin-bottom: 50px;
+}
+.blog-title ul li:nth-child(2) a{
+    background: #FF896A;
+}
+.blog-title ul li:nth-child(3) a{
+    background: #BF113C;
+}
+.blog-title ul li:nth-child(4) a{
+    background: #22478B;
+}
+.blog-title ul li:nth-child(5) a{
+    background: #00AFE1;
+}
+
+
+.single-content h5{
+    font-size: 25px;
+    color: #333;
+    padding: 30px 0 20px;
+}
+.single-content span{
+    font-size: 17px;
+    color: #828282;
+    padding-right: 20px;
+    margin-bottom: 17px;
+	-webkit-transition: .5s;
+	transition:.5s;
+}
+.single-content span:hover{
+	color: #00a2ff;	
+}
+.single-content span i{
+    font-size: 17px;
+    padding-right: 8px;     
+}
+.single-content p{}
+
+.blog-form h3,
+.witr_blog_cmnt h3 {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+.blog-q {
+	padding: 70px 32px 30px;
+	border-left: 2px solid #00a2ff;
+	box-shadow: 0 0 13px -10px #000;
+}
+.blog-q h5 {
+	font-size: 20px;
+	color: #333;
+	font-weight: 600;
+	padding-top: 18px;
+}
+.blog-q span {
+	font-size: 17px;
+	color: #828282;
+	line-height: 28px;
+}
+.blog-q p{
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+}
+.blog-q p:before {
+	position: absolute;
+	content: '\f10e';
+	left: 50%;
+	top: -10px;
+	font-size: 100px;
+	font-family: fontawesome;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	z-index: 1;
+	color: rgba(119, 1, 219, .2);
+}
+/* comment */
+.witr_blog_cmnt{}
+.witr_single_comment{}
+.witr_cmnt_thumb{}
+.witr_cmnt_thumb img{
+    float: left;
+    margin-right: 25px;	
+}
+
+.witr_cmnt_content h6 {
+	line-height: 16px;
+	font-size: 20px;
+	color: #333;
+}
+.witr_cmnt_content{
+    position: relative;
+}
+.witr_cmnt_content a{
+	color: #828282;
+	font-size: 16px;
+	line-height: 28px;
+    position: absolute;
+    right: 0;
+    top: 0;
+	-webkit-transition: .5s;
+	transition:.5s;
+}
+.witr_cmnt_content a:hover{
+	color: #00a2ff;
+}
+.witr_cmnt_content p {
+	padding-top: 5px;
+}
+
+/* form */
+.blog-form p{
+	padding-top: 23px;	
+}
+.blog-form input{
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 28px;
+    margin-bottom: 0px;	
+}
+.blog-form .witr_form_filed_inner {
+    margin-bottom:0px;
+}
+.blog-form textarea,
+.witr_textarea textarea{
+	height: 200px;
+    width: 100%;
+	color: #00a2ff;
+	padding: 12px 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	text-transform:capitalize;
+	margin-top: 30px;
+}
+.blog-form input::-webkit-input-placeholder,
+.blog-form textarea::-webkit-input-placeholder{
+    color: #8f8f8f;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.blog-form input:-ms-input-placeholder,
+.blog-form textarea:-ms-input-placeholder{
+    color: #8f8f8f;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.blog-form input::-moz-placeholder,
+.blog-form textarea::-moz-placeholder{
+    color: #8f8f8f;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.blog-form input::placeholder,
+.blog-form textarea::placeholder{
+    color: #8f8f8f;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.blog-form .witr_btn{
+	font-size: 15px;
+    padding: 15px 30px;
+    background: #00a2ff;
+    border-radius: 5px;
+    border: none;
+    margin-top: 24px;
+}
+.blog-form .witr_btn:hover{
+	background: #001f31;
+}
+
+.wit_single_sidebar{
+}
+.witr_r_img{
+	position: relative;
+}
+.witr_r_img:before{
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 202, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.witr_r_img img{
+	width:100%;
+}
+.witr_blog_cont{
+	position: absolute;
+    top: 50%;
+    left: 36%;
+    -webkit-transform: translateX(-25%) translateY(-50%);
+            transform: translateX(-25%) translateY(-50%);	
+}
+.witr_blog_cont h5{	
+    font-size: 35px;
+    line-height: 56px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* 19.contact area css */
+.witr_contact_Page{
+    padding-bottom: 100px;
+}
+.witr_message_box{
+    padding: 50px;
+	box-shadow: 0px 6px 30px 0px rgba(148,146,245,0.2);	
+}
+.witr_contact_Page .witr_form_filed_inner input {
+    padding-left: 20px;
+    text-align: left;
+}
+.witr_contact_Page .witr_form_filed_inner {
+    width: 100%;
+}
+.witr_contact_Page .witr_form_filed_inner:nth-child(odd) {
+    margin-right: 0;
+}
+.witr_contact_Page .witr_form_filed_inner:nth-child(even) {
+    margin-left: 0;
+}
+.witr_contact_Page  .witr_form_filed_inner input{
+	background:#f8f8f8;
+    border-radius: 0px;	
+}
+.witr_textarea textarea {
+	margin-top: 0px;
+	margin-bottom: 25px;
+	background:#f8f8f8;
+    border-radius: 0px;	
+}
+.witr_contact_btn button {
+    font-size: 17px;
+    padding: 15px 40px;
+    font-weight: 400;
+    color: #fff;
+    background: #00a2ff;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border: none;
+}
+/* right */
+.witr_contact_right {
+	padding-left: 50px;
+    padding-top: 103px;
+}
+.witr_title h3{
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 44px;
+}
+.witr_title p{
+    margin-bottom: 28px;
+}
+.witr_single_contact{
+    position: relative;
+    margin-bottom: 2px;
+}
+.witr_single_contact h3{
+    font-size: 20px;
+    line-height: 35px;
+    color: #333333;
+    margin-bottom: 1px;
+}
+.witr_single_contact p{
+    line-height: 35px;
+    margin-bottom: 0;
+}
+.witr_social h3{
+    margin-bottom: 17px;
+}
+.witr_social a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    line-height: .8;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 0;
+    background: #304e78;
+    margin-right: 12px;
+}
+.witr_social a.twi{
+    background: #f00;
+}
+.witr_social a.vim{
+    background: #2280ff;
+}
+.witr_social a.sha{
+    background: #6fbc29;
+}
+.witr_social a:hover{
+    background: #00a2ff;
+}
+
+
+/* map area */
+.map-area {
+    padding: 100px 0;
+}
+ .map {
+     width: 100%;
+     margin: 0;
+     height: 700px;
+     border: none;
+}
+	.mobile_menu_area,
+	.mobile_logo_area{
+		 display: none;
+	}
+	
+@media only screen and (max-width: 990px) {
+	.mobile_menu_area,
+	.mobile_logo_area{
+		 display: block;
+	}
+	.witr_header_area,
+	.witr_header_top{
+		 display: none;
+	}
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
